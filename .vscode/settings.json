@@ -4,6 +4,9 @@
     "*.embeddedhtml": "html",
     "queue": "cpp",
     "xhash": "cpp",
-    "vector": "cpp"
+    "vector": "cpp",
+    "unordered_set": "cpp",
+    "xstring": "cpp",
+    "utility": "cpp"
   }
 }
