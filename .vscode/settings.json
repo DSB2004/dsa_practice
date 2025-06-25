@@ -1,12 +1,8 @@
 {
   "files.associations": {
-    "*.dbclient-js": "javascript",
-    "*.embeddedhtml": "html",
-    "queue": "cpp",
-    "xhash": "cpp",
-    "vector": "cpp",
-    "unordered_set": "cpp",
-    "xstring": "cpp",
-    "utility": "cpp"
+    "ostream": "cpp",
+    "deque": "cpp",
+    "string": "cpp",
+    "vector": "cpp"
   }
 }
