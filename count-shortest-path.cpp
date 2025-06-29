@@ -3,7 +3,7 @@
 #include<map>
 #include<queue>
 
-// PENDING
+// FUCK THIS QUESTION 
 
 using namespace std;
 
@@ -12,8 +12,7 @@ using _pair =  pair<int,int>;
 using min_heap = priority_queue<_pair, vector<_pair>, greater<_pair>>;
 
 class Solution {
-   
-    public:
+       public:
         int countPaths(int n, vector<vector<int>>& roads) {
 
             vector<vector<_pair>> adj(n);
@@ -47,19 +46,13 @@ class Solution {
                         t[_n.second] = t[node_];
                         pq.push({dis[_n.second], _n.second});
                     }
-                    else if(dis[_n.second]==dis_+_n.first){
-                        t[_n.second]++;
+                    else  if(dis[_n.second]==dis_+_n.first){
+                        t[_n.second] += t[node_];
                     }
                 }
             }
 
-
-            int result=0;
-            const int MOD = 1e9 + 7;
-            for (auto _t : t) {
-                result = (result + _t) % MOD;
-            }
-            return result;
+            return t[n-1];
         }
 
     };
